@@ -1,5 +1,6 @@
 // Interface to defining our object of response functions
 type Product = {
+    _id: String,
     name: String,
     description: String,
     category: String,
@@ -9,4 +10,8 @@ type Product = {
 
 type response = {
     product: Array<Product>
+}
+
+type Props = {
+    promise: response
 }
